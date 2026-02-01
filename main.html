@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="section-container">
+    <div class="container">
+
+      <div class="column">
+        <h3>HOME</h3>
+        <h2 id="score-home-el" class="score">0</h2>
+        <div>
+          <button class="point-button" onclick="homeAddOne()">+1</button>
+          <button class="point-button" onclick="homeAddTwo()">+2</button>
+          <button class="point-button" onclick="homeAddThree()">+3</button>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>GUEST</h3>
+        <h2 id="score-guest-el" class="score">0</h2>
+        <div>
+          <button class="point-button" onclick="guestAddOne()">+1</button>
+          <button class="point-button" onclick="guestAddTwo()">+2</button>
+          <button class="point-button" onclick="guestAddThree()">+3</button>
+        </div>
+      </div>
+    </div>
+    <button onclick="reset()" id="reset-el" class="reset-button">Reset</button>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
